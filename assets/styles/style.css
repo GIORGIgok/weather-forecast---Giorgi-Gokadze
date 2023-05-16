@@ -1,0 +1,162 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.weather-first-box {
+  margin: auto;
+  width: 720px;
+  height: 557px;
+  background: linear-gradient(7deg, rgba(153,113,150,1) 0%, rgba(69,94,160,1) 68%, rgba(109,194,212,1) 100%); 
+  box-shadow: 2px 2px 15px;
+  border-radius: 12px;
+}
+
+.weather-today {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-current{
+  float: left;
+  margin-top: 40px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  color: rgb(231, 231, 231);
+  font-size: 17px;
+}
+
+.weather-current span:hover{
+  animation: color-change 1.3s ease-in-out infinite alternate;
+}
+
+@keyframes color-change {
+    0% { color: #fff; }
+    50% { color: #ffff00; }
+    100% { color: #fff; }
+}
+
+.hourly-weather{
+  float:right;
+  height: 240px;
+  width: 210px;
+  margin-right: 20px;
+  padding: 0 0 20px 15px;
+  border-radius: 7px;
+  background-color: rgba(117, 115, 255, 0.329);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  scrollbar-color: #a3d4f7 #5b75c8;
+}
+
+.hourly-weather h3{
+  color: rgb(231, 231, 231);
+  font-weight:300;
+  text-shadow: -2px 2px 6px #202020;
+  text-align: center;
+}
+
+.hourly-weather h4{
+  color:rgb(214, 214, 214);
+}
+
+.hourly-weather h4:hover{
+  color:#c1c2d6
+}
+
+.weather-details{
+  margin-left: 20px;
+}
+
+#weather-today-image {
+  align-self: center;
+}
+
+.hourly-icon{
+  display: inline-block;
+  vertical-align: middle;
+  width: 10.5%;
+}
+
+.hourly-icon img{
+  width: 10%;
+}
+
+#weather-city {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 30px 0 20px 0;
+  color: rgb(231, 231, 231);
+  text-shadow: -2px 2px 6px #202020;
+}
+
+#weather-date {
+  margin: 0;
+}
+
+.daily-box-day {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+#weather-det-temperature {
+  margin-right: 20px;
+  font-size: 60px;
+  color: rgb(231, 231, 231);
+  text-shadow: -2px 2px 6px #202020;
+}
+
+.weather-daily {
+  margin-top: 280px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-daily h3, p{
+  color: rgb(231, 231, 231);
+}
+
+.right-details{
+  width: 320px;
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+#weather-today-image{
+  width: 20%;
+}
+
+.daily-box-icon {
+  width: 90%;
+}
+
+.weather-daily-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 0 7px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3)
+}
+
+.weather-daily-box:hover {
+  transform: scale(1.02);
+}
+
+.weather-daily-box h3{
+  color: rgb(71, 4, 109);
+  font-weight: bold;
+}
+
+.weather-daily-box span{
+  color: whitesmoke;
+  font-size: 21px;
+}
